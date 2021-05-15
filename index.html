@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link id="css" rel="stylesheet" href="./css/style.css">
+  <title>Erick Capilla</title>
+</head>
+<body>
+  <header>
+    <h1>Universidad Autónoma de Tlaxcala</h1>
+    <picture>
+    </picture>
+  </header>
+  <main>
+    <nav class="menu">
+      <ul class="items">
+        <li><a href="./habilidades.html" target="seccionA">Habilidades Técnicas</a></li>
+        <li><a href="./objetivo.html" target="seccionA">Objetivos</a></li>
+        <li><a href="./extra.html" target="seccionA">Extra</a></li>
+        <li><a href="./curriculum.html" target="seccionB">Curriculum Vitae</a></li>
+      </ul>
+
+      <p id="fecha"></p>
+      <button id="fecha_btn">Fecha de Consulta</button>
+      <button id="cambiar">Cambiar</button>
+    </nav>
+    <div class="contenedor-seccion">
+      <section class="seccionA">
+        <iframe src="./inicio.html" frameborder="0" name="seccionA"></iframe>
+      </section>
+      <section class="seccionB">
+        <iframe src="./inicio.html" name="seccionB" frameborder="0"></iframe>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <form action="mailto:erickpoblano25@gmail.com"
+        method="POST"
+        enctype="text/plain"
+      >
+        <label for="name">Nombre:</label> <br />
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required
+          placeholder="Escribe tu nombre"
+        />
+        <br />
+        <label for="email">E-mail:</label> <br />
+        <input
+          type="text"
+          name="email"
+          id="email"
+          required
+          placeholder="Escribe tu e-mail"
+        />
+        <br />
+        <label for="comment">Comentario:</label> <br />
+        <textarea
+          name="textarea"
+          rows="10"
+          placeholder="Escribe tu comentario"
+        ></textarea>
+        <br /><br />
+        <input type="submit" value="Enviar" class="boton btn-uno" />
+        <input type="reset" value="Borrar" class="boton" />
+    </form>
+    <div class="redes">
+      <p>Red Social</p>
+      <div class="redes-img">
+        <a href="https://www.twitter.com/erickcapilla_" class="twitter"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./scripts/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  transition: 500ms;
+  color: white;
+  background-color: #5d0722;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header picture {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+  background-image: url(../assets/images/logouatx1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header * {
+  margin: 0 30px;
+}
+
+main {
+  width: calc(1005 - 250px);
+  height: calc(100vh - 200px);
+}
+
+.menu {
+  border-right: 2px solid white;
+  width: 250px;
+  height: 100%;
+  float: left;
+  background-color: #ad8500;
+  overflow-y: auto;
+}
+
+.menu .items {
+  text-align: center;
+  list-style: none;
+}
+
+.items li {
+  margin-top: 30px;
+  border-bottom: 1px solid white;
+}
+
+.items a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+}
+
+.items a:hover {
+  text-decoration: underline;
+  background-color: white;
+  color: #5d0722;
+}
+
+.menu p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.menu button {
+  display: block;
+  width: 140px;
+  height: 35px;
+  margin: 10px auto;
+  border: none;
+  background-color: #5d0722;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 2px solid white;
+  color: white;
+  transition: 500ms;
+  font-weight: bold;
+}
+
+.menu button:hover {
+  background-color: #1d263b;
+  transition: 500ms;
+}
+
+.contenedor-seccion {
+  width: calc(100% - 250px);
+  height: 100%;
+  float: right;
+  position: relative;
+}
+
+.seccionA {
+  width: 50%;
+  height: 100%;
+}
+
+.seccionB {
+  width: 50%;
+  height: 100%;
+  float: right;
+  position: relative;
+  bottom: 100%;
+  right: 0;
+}
+
+section iframe {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  top: 100%;
+  left: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.redes {
+  margin-right: 100px;
+  width: 600px;
+  height: 300px;
+  text-align: center;
+  padding: 20px;
+}
+
+.redes p {
+  font-size: 2em;
+}
+
+.redes-img {
+  width: 80%;
+  height: 75%;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes-img a {
+  width: 150px;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../assets/icons/twitter.png');
+}
+
+form {
+  color: white;
+  width: 375px;
+  margin: 5px;
+  border: 2px solid #ad8500;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);
+  min-width: 300px;
+}
+
+::placeholder {
+  font-size: 1.2em;
+}
+
+form input {
+  margin: 10px 0 30px;
+  width: 100%;
+  height: 25px;
+  border-radius: 10px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+}
+
+form textarea {
+  width: 100%;
+  padding: 10px 0 0 10px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+}
+
+form .boton {
+  width: 80px;
+  height: 30px;
+  margin-right: 20px;
+  padding: 0;
+  cursor: pointer;
+}
+
+form .btn-uno {
+  margin-right: calc(100% - 206px);
+  margin-left: 20px;
+  background-color: rgb(24, 101, 242);
+  color: white;
+  font-weight: bold;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 35px;
+  background-color: rgba(255, 255, 255, .5);
+}
